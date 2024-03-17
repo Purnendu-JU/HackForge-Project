@@ -17,6 +17,7 @@ import AnnouncementSection from './components/Announcement.js';
 import InsideClass from './components/InsideClass.js';
 import JoinClass from './components/JoinClass.js';
 import CreateClass from './components/CreateClass.js';
+import EditProfile from './components/EditProfile.js';
 
 function App() {
   
@@ -42,6 +43,7 @@ function App() {
           <Route path="/insideclass" element={<InsideClass />} />
           <Route path="/joinclass" element={<JoinClass />} />
           <Route path="/createclass" element={<CreateClass />} />
+          <Route path="/editprofile" element={<EditProfile />} />
 
         </Routes>
       </Router>
