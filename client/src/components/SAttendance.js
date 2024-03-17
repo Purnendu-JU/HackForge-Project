@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Button } from '@mui/material';
+import { Container, Typography, TextField, Button, Link, Grid } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const SAttendance = () => {
   const [attendanceCode, setAttendanceCode] = useState('');
@@ -28,6 +29,7 @@ const SAttendance = () => {
         <Typography variant="body1" sx={{ mb: 2 }}>
           Attendance marked for today.
         </Typography>
+        
       ) : (
         <>
           <TextField
@@ -38,6 +40,7 @@ const SAttendance = () => {
             value={attendanceCode}
             onChange={(e) => setAttendanceCode(e.target.value)}
           />
+          <Grid>
           <Button
             variant="contained"
             color="primary"
@@ -47,6 +50,12 @@ const SAttendance = () => {
           >
             Mark Attendance
           </Button>
+          </Grid>
+          <Grid sx={{mb:2}}>
+          <Link href='/landing' >
+          <ArrowBackIcon/>
+          </Link>
+          </Grid>
         </>
       )}
     </Container>

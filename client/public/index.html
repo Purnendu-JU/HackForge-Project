@@ -29,6 +29,26 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat",
+      "botConversationDescription": "Hello, I am Alexis, your personal guide",
+      "botId": "89cd15ca-8316-4dd8-b9a0-29ca34a94baf",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "89cd15ca-8316-4dd8-b9a0-29ca34a94baf",
+      "webhookId": "5c2ee8e0-fe51-4eab-ba1a-aa89706470ab",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "enableConversationDeletion": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
