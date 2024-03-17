@@ -20,7 +20,7 @@ function Landing() {
         <Assignment/>
         <Community/>
         <QuizSection/> */}
-        <Chatbot/>
+        {/* <Chatbot/> */}
         
     </ThemeProvider>
   );

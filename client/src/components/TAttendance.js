@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Container, Typography, Button } from '@mui/material';
+import { Container, Typography, Button, Grid } from '@mui/material';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Link } from 'react-router-dom';
 
 const TAttendance = () => {
   const [attendanceCode, setAttendanceCode] = useState('');
@@ -20,6 +22,7 @@ const TAttendance = () => {
           Generated Attendance Code: {attendanceCode}
         </Typography>
       )}
+      <Grid>
       <Button
         variant="contained"
         color="primary"
@@ -27,15 +30,21 @@ const TAttendance = () => {
         sx={{ mt: 2, mb:4 }}
         startIcon={<AssignmentIcon />}
       >
+        
         Generate Code
       </Button>
+      </Grid>
+      <Grid>
       <Button
         variant="contained"
         color="primary"
+        sx={{mb:2}}
         
       >
         Disable Code
       </Button>
+      </Grid>
+      
     </Container>
   );
 };

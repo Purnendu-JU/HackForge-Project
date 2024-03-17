@@ -16,6 +16,7 @@ import {
 } from '@mui/material';
 import axios from 'axios'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const theme = createTheme();
 
@@ -153,10 +154,10 @@ export default function SignUp() {
               >
                 Sign up
               </Button>
-              <Grid container sx={{ mb: '30px' }}>
+              <Grid container sx={{ mb: '10px' }}>
               <Grid item xs>
                 <Link href="/" variant="body2">
-                  Back
+                  <ArrowBackIcon/>
                 </Link>
               </Grid>
               <Grid item>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Avatar, Button, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import AddIcon from '@mui/icons-material/Add';
+import { Margin } from '@mui/icons-material';
 
 const Navbar = () => {
   const [avatarAnchorEl, setAvatarAnchorEl] = useState(null);
@@ -53,8 +54,8 @@ const Navbar = () => {
   }
 
   return (
-    <AppBar position="static">
-      <Toolbar>
+    <AppBar position="static" >
+      <Toolbar >
         
         <IconButton size="large" edge="start" color="deepblue" aria-label="menu" >
           <MenuIcon />
